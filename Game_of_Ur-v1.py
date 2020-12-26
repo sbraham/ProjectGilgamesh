@@ -1,6 +1,7 @@
 '''
 TO DO:
 - End of track/finishing machanics
+- Menu - incudes rule controles
 '''
 
 ### imports ###
@@ -279,9 +280,11 @@ def _newPosition(player, counter, roll):
 	space = player.counters[(counter.number-1)].space
 	return player.route[space + roll]
 
-# help menu function
+# Runs when human player needs to input a counter pick - also includes debug controles
 def _help(playerInput, player, diceScore):
 	if playerInput in ["1", "2", "3", "4", "5", "6", "7", "h", "H"]:
+		# the H input can be used to output some information heling with debugging
+		# reading the printed information can be used to tell what does what
 		if playerInput in ["h", "H"]:
 			print("Help Menu")
 			print("- Input must be between number between 1 and 7")
@@ -437,4 +440,5 @@ win_playerAWin = _game(playerA, playerB, turn_isPlayerAsTurn)
 '''
 TO DO: 
 - End of track/finishing machanics
+- Menu - incudes rule controles
 '''
