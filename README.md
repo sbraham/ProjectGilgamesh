@@ -9,4 +9,12 @@ This was developed with the aim of finding out how the game will run and gain so
 The file Game_of_Ur-v2.py contains the second version of the game (WORK IN PROGRESS) - built better and runs better with a compleat menu and end of game handling
 This version of the game allows for a fully functional game with human input or random input as will as a auto play feature to instantly run X number of games (only with random inputs) - this version does not yet have AI functionality
 
-The direcotry Game_of_Ur-v3.py contains the python files that are used to run the 3rd version of this project (WORK IN PROGRESS)
+The direcotry Game_of_Ur-v3.py contains the python files that are used to run the 3rd version of this project 
+this is largely a re-write as between this and v2, I worked on my ChessAI project in which I use a chess librery. This chess librery focuses largely on a Board object that stores most of the information. This is much easier then storing information in two player objects.
+This program also users piece objects as well as move objects. 
+These objects are defined in the script 20squares.py which itself is desinged to act as the main place for the logic of the UR game. This is imported into to main.py.
+IN DEVELOPMENT v
+main.py will also import Tkinter which, in a similar way to other projects, will be used to create a user interface for the player to play the game
+also to be made are 
+gilgamesh-gold.py
+gilgamesh-gold_learingenvironment.py
